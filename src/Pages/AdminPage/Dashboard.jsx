@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Gallery = () => {
+const Dashboard = () => {
     return (
         <div>
-            gallery
+            adminnnn
         </div>
     );
 };
 
-export default Gallery;
+export default Dashboard;

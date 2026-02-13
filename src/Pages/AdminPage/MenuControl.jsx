@@ -1,11 +1,13 @@
 import React from 'react';
 
-const News = () => {
+const MenuControl = () => {
+
+
     return (
         <div>
-            news
+            MenuControl
         </div>
     );
 };
 
-export default News;
+export default MenuControl;

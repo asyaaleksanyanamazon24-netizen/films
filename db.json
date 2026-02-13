@@ -1,0 +1,57 @@
+{
+  "menu": [
+  {
+    "id": "ik9l",
+    "name": "Menu 1",
+    "weight": 10000,
+    "description": "Description 1",
+    "price": 10000,
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": "ik2l",
+    "name": "Menu 2",
+    "weight": 20000,
+    "price": 10000,
+
+    "description": "Description 2",
+    "image": "https://via.placeholder.com/150"
+  },
+
+  {
+    "id": "ik3l",
+    "name": "Menu 3",
+    "price": 10000,
+
+    "weight": 30000,
+    "description": "Description 3",
+    "image": "https://via.placeholder.com/150"
+  }
+],
+  "films": [
+    {
+      "id": "as3f",
+      "title": "Film 1",
+      "description": "A skilled thief who steals secrets through dream-sharing technology is given a chance to erase his past crimes by planting an idea into a target's subconscious.",
+      "image": "/films/film1.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Film 2",
+      "description": "A skilled thief who steals secrets through dream-sharing technology is given a chance to erase his past crimes by planting an idea into a target's subconscious.",
+      "image": "/films/film2.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Film 3",
+      "description": "A skilled thief who steals secrets through dream-sharing technology is given a chance to erase his past crimes by planting an idea into a target's subconscious.",
+      "image": "/films/film3.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Film 4",
+      "description": "A skilled thief who steals secrets through dream-sharing technology is given a chance to erase his past crimes by planting an idea into a target's subconscious.",
+      "image": "/films/film4.jpg"
+    }
+  ]
+}
