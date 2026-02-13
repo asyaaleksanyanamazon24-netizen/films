@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+html {
+    font-size: 12px;
+}
+
+body {
+    background-color: #210E09;
+    color: #ffffff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding: 0.5rem 0;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: default;
+}
+
+/* Icon bounce */
+.logo-icon {
+    display: inline-block;
+    animation: bounce 1.5s infinite;
+}
+
+/* Text fade-in from left */
+.logo-text {
+    display: inline-block;
+    animation: slideFade 1s ease forwards;
+    opacity: 0;
+    font-style: italic;
+}
+
+/* Keyframes */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes slideFade {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+button{
+    background: gray;
+    color: black;
+    border: 1px solid black;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
