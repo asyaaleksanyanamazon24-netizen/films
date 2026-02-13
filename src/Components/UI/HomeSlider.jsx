@@ -8,10 +8,10 @@ import 'swiper/css/pagination';
 export const HomeSlider = () => {
 
     const images = [
-        "../../../public/Images/Slider/img1.webp",
-        "../../../public/Images/Slider/img2.jpg",
-        "../../../public/Images/Slider/img3.jpg",
-        "../../../public/Images/Slider/img4.jpg",
+        "/Images/Slider/img1.webp",
+        "/Images/Slider/img2.jpg",
+        "/Images/Slider/img3.jpg",
+        "/Images/Slider/img4.jpg",
     ]
 
     return (
