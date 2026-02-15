@@ -8,8 +8,25 @@ datasource db {
 }
 
 model Film {
-  id          String   @id
+  id          String @id
   title       String
   description String
+  image       String
+}
+
+model Menu {
+  id          String @id
+  name        String
+  weight      Int
+  description String
+  price       Int
+  image       String
+}
+
+model News {
+  id          String @id
+  title       String
+  description String
+  date        String
   image       String
 }

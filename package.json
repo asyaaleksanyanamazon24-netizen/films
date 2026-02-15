@@ -13,7 +13,10 @@
     "postinstall": "prisma generate",
     "db:push": "prisma db push",
     "db:migrate": "prisma migrate deploy",
-    "db:seed": "node prisma/seed.js"
+    "db:seed": "node prisma/seed.js",
+    "db:studio": "npx prisma studio",
+    "db:dump": "node scripts/db-dump.js",
+    "db:restore": "node scripts/db-restore.js"
   },
   "dependencies": {
     "@prisma/client": "^6.9.0",

@@ -6,7 +6,7 @@ const News = () => {
     const { t } = useLanguage();
 
     useEffect(() => {
-        fetch('http://localhost:4000/news')
+        fetch('/api/news')
             .then(res => res.json())
             .then(data => setNews(data));
     }, []);

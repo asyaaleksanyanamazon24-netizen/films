@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const MENU_URL = "http://localhost:4000/menu"
+const MENU_URL = "/api/menu"
 
 export const fetchMenu = createAsyncThunk(
     'menu/fetchMenu',
