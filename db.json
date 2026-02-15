@@ -1,33 +1,86 @@
 {
   "menu": [
-  {
-    "id": "ik9l",
-    "name": "Menu 1",
-    "weight": 10000,
-    "description": "Description 1",
-    "price": 10000,
-    "image": "https://via.placeholder.com/150"
-  },
-  {
-    "id": "ik2l",
-    "name": "Menu 2",
-    "weight": 20000,
-    "price": 10000,
-
-    "description": "Description 2",
-    "image": "https://via.placeholder.com/150"
-  },
-
-  {
-    "id": "ik3l",
-    "name": "Menu 3",
-    "price": 10000,
-
-    "weight": 30000,
-    "description": "Description 3",
-    "image": "https://via.placeholder.com/150"
-  }
-],
+    {
+      "id": "m1",
+      "name": "Grilled Salmon",
+      "weight": 350,
+      "description": "Fresh Atlantic salmon grilled to perfection with lemon butter sauce.Fresh Atlantic salmon grilled to perfection with lemon butter sauce.",
+      "price": 12000,
+      "image": "/foods/food1.jpg"
+    },
+    {
+      "id": "m2",
+      "name": "Beef Steak",
+      "weight": 400,
+      "description": "Juicy ribeye steak served with roasted vegetables and mashed potatoes.Juicy ribeye steak served with roasted vegetables and mashed potatoes.",
+      "price": 15000,
+      "image": "/foods/food2.jpg"
+    },
+    {
+      "id": "m3",
+      "name": "Caesar Salad",
+      "weight": 250,
+      "description": "Crisp romaine lettuce, parmesan cheese, croutons, and Caesar dressing.Crisp romaine lettuce, parmesan cheese, croutons, and Caesar dressing.",
+      "price": 4500,
+      "image": "/foods/food3.jpg"
+    },
+    {
+      "id": "m4",
+      "name": "Pasta Carbonara",
+      "weight": 300,
+      "description": "Classic Italian pasta with eggs, cheese, pancetta, and black pepper.Classic Italian pasta with eggs, cheese, pancetta, and black pepper.",
+      "price": 5500,
+      "image": "/foods/food4.jpg"
+    },
+    {
+      "id": "m5",
+      "name": "Chicken Alfredo",
+      "weight": 350,
+      "description": "Fettuccine pasta tossed with creamy Alfredo sauce and grilled chicken.Fettuccine pasta tossed with creamy Alfredo sauce and grilled chicken.",
+      "price": 6000,
+      "image": "/foods/food1.jpg"
+    },
+    {
+      "id": "m6",
+      "name": "Margherita Pizza",
+      "weight": 500,
+      "description": "Traditional pizza with tomato sauce, fresh mozzarella, and basil.Traditional pizza with tomato sauce, fresh mozzarella, and basil.",
+      "price": 4000,
+      "image": "/foods/food2.jpg"
+    },
+    {
+      "id": "m7",
+      "name": "Sushi Platter",
+      "weight": 400,
+      "description": "Assorted fresh sushi rolls including salmon, tuna, and avocado.",
+      "price": 18000,
+      "image": "/foods/food3.jpg"
+    },
+    {
+      "id": "m8",
+      "name": "Cheeseburger",
+      "weight": 300,
+      "description": "Juicy beef patty with cheddar cheese, lettuce, tomato, and fries.",
+      "price": 3500,
+      "image": "/foods/food4.jpg"
+    },
+    {
+      "id": "m9",
+      "name": "Tiramisu",
+      "weight": 150,
+      "description": "Classic Italian dessert made with coffee-soaked ladyfingers and mascarpone.",
+      "price": 2500,
+      "image": "/foods/food1.jpg"
+    },
+    {
+      "id": "m10",
+      "name": "Fruit Salad",
+      "weight": 200,
+      "description": "A refreshing mix of seasonal fruits served with honey and mint.",
+      "price": 2000,
+      "image": "/foods/food2.jpg"
+    }
+  ],
   "films": [
     {
       "id": "as3f",
@@ -52,6 +105,36 @@
       "title": "Film 4",
       "description": "A skilled thief who steals secrets through dream-sharing technology is given a chance to erase his past crimes by planting an idea into a target's subconscious.",
       "image": "/films/film4.jpg"
+    }
+  ],
+  "news": [
+    {
+      "id": "n1",
+      "title": "New Menu Launch",
+      "description": "We are excited to announce our new seasonal menu featuring fresh ingredients and exciting flavors. Come and taste the difference!",
+      "date": "2023-10-25",
+      "image": "/foods/food1.jpg"
+    },
+    {
+      "id": "n2",
+      "title": "Film Festival Winner",
+      "description": "Our latest production has won the Best Picture award at the International Film Festival. A huge thank you to our cast and crew!",
+      "date": "2023-11-10",
+      "image": "/films/film1.jpg"
+    },
+    {
+      "id": "n3",
+      "title": "Special Event: Jazz Night",
+      "description": "Join us this Friday for a night of smooth jazz and delicious cocktails. Live performance by the Blue Note Trio.",
+      "date": "2023-11-15",
+      "image": "/films/film2.jpg"
+    },
+    {
+      "id": "n4",
+      "title": "Charity Gala Success",
+      "description": "Thanks to your generous support, we raised over $10,000 for local charities at our annual gala dinner.",
+      "date": "2023-12-01",
+      "image": "/foods/food3.jpg"
     }
   ]
 }

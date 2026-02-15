@@ -12,25 +12,27 @@ const MenuDetail = ({ name, weight, description, image, price }) => {
     return (
         <Card
             onClick={() => setModalIsOpen(true)}
-
-            className="flex flex-row p-1 max-w-3xl bg-red-500 text-xs">
+            className="flex flex-row p-2 max-w-3xl cursor-pointer hover:shadow-lg transition-shadow duration-300"
+            sx={{ display: 'flex', flexDirection: 'row', padding: 1, maxWidth: '100%', backgroundColor: 'white', borderRadius: 2 }}
+        >
             <CardMedia
                 component="img"
                 image={image || "https://via.placeholder.com/150"}
                 alt={name}
-                style={{ width: '50%' }}
-                className=" h-20 object-cover rounded bg-gray-400"
+                sx={{ width: 280, height: 180, objectFit: 'cover', borderRadius: 1 }}
             />
 
-            <CardContent className="flex flex-col justify-between flex-1 ml-2 bg-green-400">
-                <div className="flex justify-between items-start">
-                    <Typography gutterBottom variant="subtitle1" component="div" className="text-sm font-bold">
+            <CardContent sx={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '16px !important' }}>
+                <div className="flex justify-between items-start w-full">
+                    <Typography gutterBottom variant="h5" component="div" className="font-bold text-gray-800 leading-tight text-2xl">
                         {name}
                     </Typography>
-                    <Button className="px-1 py-0.5 text-xs" text={price} />
+                    <span className="bg-orange-500 text-white text-base px-3 py-1 rounded-full font-bold ml-2 whitespace-nowrap">
+                        {price} ֏
+                    </span>
                 </div>
 
-                <Typography variant="body2" className="text-gray-600 mt-1 bg-yellow-400 text-xs">
+                <Typography variant="body1" className="text-gray-600 mt-2 line-clamp-3 text-base leading-relaxed">
                     {description}
                 </Typography>
             </CardContent>
@@ -43,7 +45,9 @@ const MenuDetail = ({ name, weight, description, image, price }) => {
                     }}
                     desc={description}
                     name={name}
-                    price={price} />
+                    price={price}
+                    image={image}
+                />
             }
         </Card>
     );

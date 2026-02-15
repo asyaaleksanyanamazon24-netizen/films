@@ -4,27 +4,27 @@ const Gallery = () => {
     const [page, setPage] = useState(1)
     const limit = 4
     const images = [
-        "../../../public/Images/Slider/img1.webp",
-        "../../../public/Images/Slider/img2.jpg",
-        "../../../public/Images/Slider/img3.jpg",
-        "../../../public/Images/Slider/img4.jpg",
-        "../../../public/Images/Slider/img3.jpg",
-        "../../../public/Images/Slider/img4.jpg",
-        "../../../public/Images/Slider/img1.webp",
-        "../../../public/Images/Slider/img2.jpg",
-        "../../../public/Images/Slider/img3.jpg",
-        "../../../public/Images/Slider/img1.webp",
-        "../../../public/Images/Slider/img2.jpg",
-        "../../../public/Images/Slider/img3.jpg",
-        "../../../public/Images/Slider/img4.jpg",
-        "../../../public/Images/Slider/img1.webp",
-        "../../../public/Images/Slider/img2.jpg",
-        "../../../public/Images/Slider/img3.jpg",
-        "../../../public/Images/Slider/img4.jpg",
-        "../../../public/Images/Slider/img1.webp",
-        "../../../public/Images/Slider/img2.jpg",
-        "../../../public/Images/Slider/img3.jpg",
-        "../../../public/Images/Slider/img4.jpg",
+        "/Images/Slider/img1.webp",
+        "/Images/Slider/img2.jpg",
+        "/Images/Slider/img3.jpg",
+        "/Images/Slider/img4.jpg",
+        "/Images/Slider/img3.jpg",
+        "/Images/Slider/img4.jpg",
+        "/Images/Slider/img1.webp",
+        "/Images/Slider/img2.jpg",
+        "/Images/Slider/img3.jpg",
+        "/Images/Slider/img1.webp",
+        "/Images/Slider/img2.jpg",
+        "/Images/Slider/img3.jpg",
+        "/Images/Slider/img4.jpg",
+        "/Images/Slider/img1.webp",
+        "/Images/Slider/img2.jpg",
+        "/Images/Slider/img3.jpg",
+        "/Images/Slider/img4.jpg",
+        "/Images/Slider/img1.webp",
+        "/Images/Slider/img2.jpg",
+        "/Images/Slider/img3.jpg",
+        "/Images/Slider/img4.jpg",
     ]
 
     const startIndex = (page - 1) * limit
@@ -45,29 +45,29 @@ const Gallery = () => {
                         </div>
                     })
                 }
-
-
             </div>
-          <div>
-              <button
-                  disabled={page === 1}
-                  onClick={()=>{setPage(page - 1)}}>Prev</button>
-              {
-                  pagesArr.map((p, index) => {
-                      return <button
-                          onClick={()=>{
-                              setPage(p)
-                          }}
-                          key={index}>{p}</button>
-                  })
-              }
-              <button
+            <div className="flex justify-center items-center gap-2 mt-8 mb-4">
+                <button
+                    className={`px-3 py-1 rounded border border-orange-500 ${page === 1 ? 'bg-white text-gray-400 cursor-not-allowed border-gray-300' : 'bg-white text-black hover:bg-gray-100'}`}
+                    disabled={page === 1}
+                    onClick={() => { setPage(page - 1) }}>Prev</button>
+                {
+                    pagesArr.map((p, index) => {
+                        return <button
+                            className={`w-8 h-8 rounded border border-orange-500 flex items-center justify-center ${page === p ? 'bg-white text-black font-bold border-2' : 'bg-white text-black hover:bg-gray-100'}`}
+                            onClick={() => {
+                                setPage(p)
+                            }}
+                            key={index}>{p}</button>
+                    })
+                }
+                <button
+                    className={`px-3 py-1 rounded border border-orange-500 ${page === totalPages ? 'bg-white text-gray-400 cursor-not-allowed border-gray-300' : 'bg-white text-black hover:bg-gray-100'}`}
+                    disabled={page === totalPages}
+                    onClick={() => { setPage(page + 1) }}
 
-                  disabled={page === totalPages}
-                  onClick={()=>{setPage(page + 1)}}
-
-              >Next</button>
-          </div>
+                >Next</button>
+            </div>
 
         </div>
     );

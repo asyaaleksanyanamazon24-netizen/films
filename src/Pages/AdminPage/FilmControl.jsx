@@ -3,11 +3,11 @@ import { useDispatch } from 'react-redux';
 
 const FilmControl = () => {
 
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
-    useEffect(() => {
-        dispatch(fetchFilm);
-    }, [dispatch])
+    // useEffect(() => {
+    //     dispatch(fetchFilm);
+    // }, [dispatch])
 
     return (
         <div>

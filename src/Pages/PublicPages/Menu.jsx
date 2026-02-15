@@ -24,7 +24,7 @@ const Menu = () => {
     return (
         <div>
             <h1>{t("menu_available")}</h1>
-            <div className='grid grid-cols-2 gap-2'>
+            <div className='grid grid-cols-2 gap-6'>
                 {
                     menu.map((el, index) => (
                         <MenuDetail
