@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 
-const FILM_URL = "http://localhost:4000/films";
+const FILM_URL = "/api/films";
 
 export const fetchFilm = createAsyncThunk(
     'film/fetchFilm',
